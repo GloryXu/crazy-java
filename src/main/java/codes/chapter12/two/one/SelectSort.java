@@ -5,27 +5,6 @@ import java.util.Arrays;
 /**
  * 直接选择排序
  */
-class DataWrap implements Comparable<DataWrap> {
-
-    int data;
-    String flag;
-
-    public DataWrap(int data, String flag) {
-        this.data = data;
-        this.flag = flag;
-    }
-
-    @Override
-    public String toString() {
-        return data + flag;
-    }
-
-    @Override
-    public int compareTo(DataWrap o) {
-        return this.data > o.data ? 1 : (this.data == o.data ? 0 : -1);
-    }
-}
-
 public class SelectSort {
     public static void selectSort(DataWrap[] data) {
         System.out.println("开始排序");
